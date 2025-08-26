@@ -1,0 +1,39 @@
+package com.example.baitap5;
+
+import java.time.LocalDate;
+
+public class Event {
+    private String eventName;
+    private LocalDate date;
+    private String location;
+    public Event(String eventName, LocalDate date, String location) {
+        this.eventName = eventName;
+        this.date = date;
+        this.location = location;
+    }
+    public String getEventName() {
+        return eventName;
+    }
+    public void setEventName(String eventName) {
+        this.eventName = eventName;
+    }
+    public LocalDate getDate() {
+        return date;
+    }
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+    public String getLocation() {
+        return location;
+    }
+    public void setLocation(String location) {
+        this.location = location;
+    }
+    @Override
+    public String toString() {
+        return "Event [eventName=" + eventName + ", date=" + date + ", location=" + location + "]";
+    }
+    
+
+    
+}
